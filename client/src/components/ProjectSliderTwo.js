@@ -33,31 +33,31 @@ class ServiceGridSlider extends Component {
     };
     let data = [
       {
-        img: "service1.jpg",
-        serviceTitle: "React - The Complete Guide (incl Hooks, Redux)",
+        img: "imagine-cup-trophy.jpg",
+        serviceTitle: "Project Here to hear - Western Canada High School",
         serviceExcerpt:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "Category: AI for Accessibility. A language-learning tool for children with hearing-impairements",
         serviceUrl: "service-details-left-sidebar"
       },
       {
-        img: "service2.jpg",
-        serviceTitle: "The Complete React Native Course",
+        img: "imagine-cup-trophy1.jpg",
+        serviceTitle: "Sense and Save - Daffodils Foundation for Learning in India",
         serviceExcerpt:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          " An AI-powered, bio-resistive graphene sensor for real-time amniotic fluid monitoring in pregnant women, supporting those who do not have regular or easy access to healthcare.",
         serviceUrl: "service-details-left-sidebar"
       },
       {
-        img: "service3.jpg",
-        serviceTitle: "JavaScript: Understanding the Weird Parts",
+        img: "imagine-cup-trophy2.jpg",
+        serviceTitle: "Gaia Eye 80 degrees - Beijing No. 80 High School in China",
         serviceExcerpt:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "A global environmental diversity and anomaly discovery sharing platform, empowering people to report environmental concerns and observations and get feedback powered by AI.",
         serviceUrl: "service-details-left-sidebar"
       },
       {
-        img: "service1.jpg",
-        serviceTitle: "MongoDB - The Complete Developer Guide",
+        img: "imagine-cup-trophy1.jpg",
+        serviceTitle: "CORRA - St Aloysius College in Australia",
         serviceExcerpt:
-          "Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor",
+          "The “Companion Obedient Response Robot,” designed to interact and support children with autism in the form of a robot doll that can be with them at all times.",
         serviceUrl: "service-details-left-sidebar"
       }
     ];
@@ -104,7 +104,7 @@ class ServiceGridSlider extends Component {
               <div className="col-lg-12">
                 <div className="section-title-area text-center">
                   <h2 className="section-title mb-0">
-                    Latest Tutorials <span className="title-icon" />
+                    Previous Imagine Cup Junior Projects <span className="title-icon" />
                   </h2>
                 </div>
               </div>

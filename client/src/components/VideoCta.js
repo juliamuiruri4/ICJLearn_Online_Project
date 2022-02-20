@@ -26,9 +26,9 @@ class VideoCta extends Component {
                     Best E-learning Portal
                   </h3>
                   <p className="video-cta-content__text">
-                  In this Online learning platform, students learn the fundamentals of programming starting with a detailed introduction to Microsoft and the Imagine Cup.
-                   By the end of the module, you will: Understand the theory of programming,Attempt practical sessions following the hands-on guides,
-                  Apply the learnt skills in your individual and team projects.
+                  The Imagine Cup Online Learning portal provides a platform for students to learn the fundamentals of programming starting with a detailed 
+                  introduction to Microsoft and the Imagine Cup program. By the end of the modules, you will: Understand the basic concepts of programming, 
+                  attempt practical quizes after the hands-on guides, apply the developed skills in your individual and team projects.
                   </p>
                   <a
                     href={`${process.env.PUBLIC_URL}/contact-us`}

@@ -5,31 +5,29 @@ class Footer extends Component {
     return (
       <div>
         {/*====================  footer area ====================*/}
-        <div className="footer-area dark-bg">
+        <div className="footer-area" >
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="footer-content-wrapper section-space--inner--100">
                   <div className="row">
-                    <div className="col-xl-3 col-lg-3 col-md-12">
+                    <div className="col-xl-3 col-lg-3 col-md-4">
                       {/* footer intro wrapper */}
                       <div className="footer-intro-wrapper">
                         <div className="footer-logo">
                           <a href={`${process.env.PUBLIC_URL}/home-two`}>
                             <div className="logoHead">
                               <img
-                                src="/assets/img/logo/logonew.png"
+                                src="/assets/img/logo/ic-logo.jpg"
                                 alt=""
                                 className="sticky-logo img-fluid"
                               />
-                              <h3>Imagine Cup Junior Online Module</h3>
+                              <h3>Imagine Cup Junior Online Learning</h3>
                             </div>
                           </a>
                         </div>
                         <div className="footer-desc">
-                          Lorem ipsum dolor sit amet consect adipisici elit, sed
-                          do eiusmod tempor incididuk ut labore et dolore magna
-                          aliqua Ut enim
+                          Imagine Cup Junior is open to every student aged between 13 years - 18 years.
                         </div>
                       </div>
                     </div>
@@ -43,7 +41,7 @@ class Footer extends Component {
                           </li>
                           <li>
                             <a href={`${process.env.PUBLIC_URL}/`}>
-                              Company News
+                              Imagine Cup Website
                             </a>
                           </li>
                           <li>
@@ -62,50 +60,20 @@ class Footer extends Component {
                     </div>
                     <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                       {/* footer widget */}
-                      <div className="footer-widget">
-                        <h4 className="footer-widget__title">USEFUL LINKS</h4>
-                        <ul className="footer-widget__navigation">
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Our Services
-                            </a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Showcase</a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Affliates</a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Disclaimer
-                            </a>
-                          </li>
-                          <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
-                              Privacy Policy
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
-                      {/* footer widget */}
                       <div className="footer-widget mb-0">
                         <h4 className="footer-widget__title">CONTACT US</h4>
                         <div className="footer-widget__content">
                           <p className="address">
-                            Your address goes here, street Crossroad123.
+                            Dunhill Towers, Westlands, Kenya
                           </p>
                           <ul className="contact-details">
                             <li>
-                              <span>P:</span>99 55 66 88 526
+                            <span className="icon"><i className="ion-ios-telephone-outline" /></span>
+                                    <span className="text"><a href="tel:254724856784">(254) 72485 6784</a></span>
                             </li>
                             <li>
-                              <span>F:</span>55 44 77 62
-                            </li>
-                            <li>
-                              <span>E:</span>cons@email.com
+                            <span className="icon"><i className="ion-ios-email-outline" /></span>
+                                    <span className="text"><a href="mailto:learn@imaginecup.onmicrosoft.com">learn@imaginecup.onmicrosoft.com</a><a href="mailto:kenya@stdnprtners.onmicrosoft.com">kenya@stdnprtners.onmicrosoft.com</a></span>
                             </li>
                           </ul>
                         </div>
@@ -118,7 +86,7 @@ class Footer extends Component {
           </div>
           <div className="footer-copyright-wrapper">
             <div className="footer-copyright text-center">
-              Copyright © 2019. All right reserved
+              Copyright © 2022. All right reserved
             </div>
           </div>
         </div>

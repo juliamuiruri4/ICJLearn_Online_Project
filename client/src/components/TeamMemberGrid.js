@@ -6,33 +6,33 @@ class TeamMemberGrid extends Component {
 
     let data = [
       {
-        profileImage: "team-1.jpg",
+        profileImage: "Julia.jpeg",
         profileTitle: "Julia Muiruri",
-        profileDesignation: "Frontend Developer",
-        profileEmail: "",
+        profileDesignation: "Frontend Engineer",
+        profileEmail: "juliamuiruri1999@outlook.com",
         socialLinks: {
           facebook: "//www.facebook.com",
           twitter: "//www.twitter.com",
-          linkedin: "//www.linkedin.com",
+          linkedin: "https://www.linkedin.com/in/juliamuiruri/",
           googlePlus: "//plus.google.com"
         }
       },
       {
-        profileImage: "team-2.jpg",
+        profileImage: "Consolata.jpg",
         profileTitle: "Consolata Gicheru",
-        profileDesignation: "Designer",
+        profileDesignation: "UI/UX Designer",
         profileEmail: "",
         socialLinks: {
           facebook: "//www.facebook.com",
           twitter: "//www.twitter.com",
-          linkedin: "//www.linkedin.com",
+          linkedin: "https://www.linkedin.com/in/consolata-gicheru-0a000a198/",
           googlePlus: "//plus.google.com"
         }
       },
       {
         profileImage: "team-3.jpg",
         profileTitle: "Bill Mutuma",
-        profileDesignation: "Backend Developer",
+        profileDesignation: "Backend Engineer",
         profileEmail: "",
         socialLinks: {
           facebook: "//www.facebook.com",
@@ -44,7 +44,7 @@ class TeamMemberGrid extends Component {
       {
         profileImage: "team-4.jpg",
         profileTitle: "Patrick Kariuki",
-        profileDesignation: "Frintend Developer",
+        profileDesignation: "Frontend Engineer",
         profileEmail: "",
         socialLinks: {
           facebook: "//www.facebook.com",
@@ -62,12 +62,17 @@ class TeamMemberGrid extends Component {
           key={i}
         >
           <div className="team">
-            
             <div className="content">
               <h3 className="title">{val.profileTitle}</h3>
+              <div className="image">
+              <img
+                src={`assets/img/team/${val.profileImage}`}
+                alt=""
+              />
+            </div>
               <span>{val.profileDesignation}</span>
-              <a href={"mailto:" + val.profileEmail} className="email">
-                {val.profileEmail}
+              <a href={val.socialLinks.linkedin} className="social">
+                {val.socialLinks.linkedin}
               </a>
               
             </div>

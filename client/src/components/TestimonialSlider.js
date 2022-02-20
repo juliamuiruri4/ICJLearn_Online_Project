@@ -20,21 +20,21 @@ class TestimonialSlider extends Component {
     };
     let data = [
       {
-        testimonialImage: "1.jpg",
+        testimonialImage: "caleb.jpg",
         testimonialName: "Caleb Kigwi",
         testimonialDesignation: "High School Student, Kenya",
         testimonialText:
           "While I was in primary school, I was introduced to the concepts of Artificial Intelligence and I was fascinated by what technology is doing around the world. I begun studying AI, under the guidance of some Microsoft Learn Student Ambassadors from Kenya and I would love to have more of my school friends learn about technology."
       },
       {
-        testimonialImage: "3.jpg",
+        testimonialImage: "steven.jpg",
         testimonialName: "Steven Kariuki",
         testimonialDesignation: "High School Student, Kenya",
         testimonialText:
           "Still in my high school, during the COVID-19 pandemic period away from school, I was introduced to the concepts of Artificial Intelligence and I admit that I have had a lot of fun learning more about technology. This platform provides easy access to learning materials and makes it possible for more and more students to be introduced to technology even whil still in high school."
       },
       {
-        testimonialImage: "2.jpg",
+        testimonialImage: "Julia.jpg",
         testimonialName: "Julia Muiruri",
         testimonialDesignation: "Instructor, Introduction to Programming",
         testimonialText:

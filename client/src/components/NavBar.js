@@ -248,7 +248,7 @@ class NavBar extends Component {
                           <a href={`${process.env.PUBLIC_URL}/home-two`}>
                             <div className="logoHead">
                               <img
-                                src="/assets/img/logo/logonew.jpg"
+                                src="/assets/img/logo/ic-logo.jpg"
                                 alt=""
                                 className="sticky-logo img-fluid"
                               />

@@ -9,6 +9,10 @@
   }
 }
 
+.footer-area {
+  background-color: #5C2391;
+}
+
 .footer-logo {
   margin-bottom: 35px;
 
@@ -74,10 +78,6 @@
 
     @media #{$tablet-device, $large-mobile} {
       margin-bottom: 20px;
-    }
-
-    &--black {
-      color: $theme-color--black;
     }
   }
 
