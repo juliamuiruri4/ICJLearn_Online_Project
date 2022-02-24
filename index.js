@@ -12,6 +12,7 @@ const fileUpload = require('express-fileupload');
 var multer = require('multer')
 var cors = require('cors');
 const profile = require('./routes/api/profile');
+const path = require('path');
 
 
 const app = express();
@@ -28,7 +29,7 @@ app.use(fileUpload());
 //Body Parser
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, parameterLimit:1000000}));
 app.use(bodyParser.json({limit: '50mb', extended: true}));
-
+app.use('/', express.static(path.join(__dirname, 'build')));
 //Connect to mongodb through mongoose
 mongoose
   .connect(db,  { useNewUrlParser: true })

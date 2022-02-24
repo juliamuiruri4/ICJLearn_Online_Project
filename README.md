@@ -1,135 +1,70 @@
-# E-Learning-MERN
-It is a E-Learning website which provides functionality of registering in any course and watch its related videos and many other features such as Admin Panel, Instructors related functions etc. 
+# Deploying your application to Azure App Service
+## Prerequisites
 
-<img src="img/KnowHow - E-Learning Portal.png">
-
----
-
-## Quick Start
-
-```bash
-# clone repository
-https://github.com/MicrosoftStudentAmbassadors-Kenya/ICJLearn_Online_Project.git
-
-# Install dependencies
-cd ICJLearn_Online_Project && npm install
-cd ICJLearn_Online_Project && cd client && npm install
-
-```
-Create account in Mongo Atlas and create cluster. Get your MongoURI by following the instructions and add it in keys.js file which is inside the config folder. 
-
-```
-secretOrKey=ANY_SECRET
-mongoURI: 'YOUR_URI'
-
-```
-
-To run the development server:
-
-```bash
-# the development server runs on port 3000
-npm run dev
-```
-
-To run production build:
-
-```bash
-# create code bundle
-npm run build
-
-# run production server
-npm run prod
-```
----
-
-## Instructor's Portal
-
-<img src="img/login_i.png">
-
----
-
-<img src="img/g.png">
-
----
-
-<img src="img/e.png">
-
----
-
-<img src="img/d.png">
-
----
-
-## Student's Portal
-
-<img src="img/b.png">
-
----
-
-<img src="img/abc.png">
-
----
-
-<img src="img/cc.png">
-
----
-
----
-
-## Main Technologies
-
-### Client Side
-
-- [x] **[React](https://github.com/facebook/react)**
-- [x] **[Redux](https://github.com/reactjs/redux)**
-- [x] **[Bootstap 4](https://github.com/twbs/bootstrap/tree/v4-dev)**
-- [x] **[React-Router-DOM](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
-
-#### Libraries used in Client-side
-
-- [x] **[axios](https://github.com/axios/axios)**
-- [x] **[classnames](https://github.com/JedWatson/classnames)**
-- [x] **[react-moment](https://github.com/headzoo/react-moment)**
-- [x] **[react-redux](https://github.com/reduxjs/react-redux)**
-- [x] **[redux-thunk](https://github.com/reduxjs/redux-thunk)**
-- [x] **[validator](https://github.com/chriso/validator.js)**
-- [x] **[canvasjs]()**
-- [x] **[file-loader]()**
-- [x] **[fs-extra]()**
-- [x] **[canvasjs]()**
-- [x] **[node-sass]()**
-- [x] **[postcss-loader]()**
-- [x] **[react-countup]()**
-- [x] **[react-modal-video]()**
-- [x] **[react-toastify]()**
-- [x] **[react-visibility-sensor]()**
-- [x] **[reactjs-popup]()**
-- [x] **[reactstrap]()**
-- [x] **[sass-loader]()**
-- [x] **[semver]()**
-- [x] **[swiper]()**
-- [x] **[url-loader]()**
-- [x] **[animate.css]()**
+- Code Editor (Visual Studio Code)
+- Microsoft Azure Subscription
 
 
-### Server Side
+### `Step 1 : Prepare the project to be deployed on Visual Studio Code.`
 
-- [x] **[Node.js / Express](https://github.com/expressjs/express)**
-- [x] **[MongoDB](https://github.com/mongodb/mongo)**
-- [x] **[JWT](https://github.com/auth0/node-jsonwebtoken)**
-- [x] **[Passport](http://www.passportjs.org/)**
-- [x] **[Passport-jwt](https://github.com/themikenicholson/passport-jwt)**
+Runs the app in the development mode to ensure it contains no errors.
 
-#### Libraries used in Server-side
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [x] **[express-fileupload](https://github.com/dcodeIO/bcrypt.js)**
-- [x] **[bcryptjs](https://github.com/dcodeIO/bcrypt.js)**
-- [x] **[gravatar](https://github.com/emerleite/node-gravatar)**
-- [x] **[mongoose](http://mongoosejs.com/)**
-- [x] **[jwt-decode](https://github.com/auth0/jwt-decode)**
-- [x] **[moment](https://momentjs.com/)**
-- [x] **[validator](https://github.com/chriso/validator.js)**
-- [x] **[cors]()**
-- [x] **[jsonwebtoken]()**
-- [x] **[body-parser]()**
-# ICJLearn_Online_Project
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `Step 2 : Push your project to a repository on GitHub.`
+
+Why this step? 
+We shall set up a GitHub workflow that will automatically re-deploy your application whenever code is pushed to the master branch. With this configured, you do not have to keep re-deploying your application manually.
+
+
+Useful Azure Extensions that allow you to work with GitHub in Visual Studeio Code. 
+- GitLens - Git supercharged
+- Source Control Buttons
+
+
+### `Step 3 : Navigate to the Azure portal to create your resource`
+Open [Azure portal](https://portal.azure.com) and sign in with an email with an Azure Subscription.
+
+![Active Azure Subscription](ReadMeAssets/ActiveSubscription.jpg) 
+
+If you do not have an Azure Subscription and you are an active university/college student, you can [activate a Free Azure Account](https://azure.microsoft.com/en-us/free/students/) using your school email address, no credit card information required.
+
+To host an application on Azure, you need to create an App Service as shown below
+
+![Create a New App Service](ReadMeAssets/NewAppService.jpg)
+
+During the Web App Configuration, you need to provide the following specifications:
+> ![App Service Specifications](ReadMeAssets/AppSpec.jpg)
+- Select the Subscription to host your application
+- Provide a resource group (logical container) to which your application will be saved
+- Provide a Web App Name. This needs to be a globally unique name as it appears on the app's url after deployment [Web-App-Name].azurewebsites.net
+
+Please note you can configure a custom domain for your application on Azure. Kindly see [custom dns documentation](https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain)
+- For this guide, we have our codebase in GitHub, so select 'code' as your publish item.
+
+Please note, based on where your project resides, you can select either 'code', if it is on GitHub, or 'docker container' or a 'static web app'
+- Select your project's runtime stack (ie. Node 14 TLS)
+- Select preferred Operating System to host your resource
+- Select an Azure region to which you would like to host your resource.
+
+Please note, the region's availability depends on the App Service Plan you intend to use (ie. A free B1 plan is not available for a Linix Based App Service in West Europe but a Window's based App Service in the same region can run on a free B1 plan) 
+
+Learn more about [Azure Regions and availability zones here](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)
+
+> ![Configure GitHub Actions](ReadMeAssets/GitHubActions.jpg)
+- Configure a GitHub workflow using GitHub Actions to automatically re-deploy your application once code is pushed to the master branch.
+
+Learn more on [GitHub Actions](https://github.com/features/actions) here
+- If you prefer, you can enable Application Insights Service, an Application Performance Management (APM) Service that enables you to monitor your application (ie. traffic)
+- Once done, click 'Review and Create'
+
+## Congratulations!! - You have just created your first Azure Web App!
+
+![Created Azure Web App](ReadMeAssets/AppService.jpg)
+
+### `Step 4 : Navigate to [Web-App-Name].azurewebsites.net to access your live application`
+
+You can easily click browse on the Web App as shown above and you will be redirected to your live application.

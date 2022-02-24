@@ -32,28 +32,28 @@ class ServiceTabExample extends Component {
         bgUrl: "service-tab1.jpg",
         contentTitle: "Modern React with Redux",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks!",
         serviceLink: "service-details-left-sidebar"
       },
       {
         bgUrl: "service-tab1.jpg",
         contentTitle: "The Complete React Native Course",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Understand React Native with Hooks, Context, and React Navigation.",
         serviceLink: "service-details-left-sidebar"
       },
       {
         bgUrl: "service-tab1.jpg",
         contentTitle: "JavaScript: Understanding the Weird Parts",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "If you want to learn how JavaScript engine works under the hood I highly recommend you to check out this course.",
         serviceLink: "service-details-left-sidebar"
       },
       {
         bgUrl: "service-tab1.jpg",
         contentTitle: "MongoDB - The Complete Developer Guide",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "Master MongoDB Development for Web & Mobile Apps. CRUD Operations, Indexes, Aggregation Framework - All about MongoDB!",
         serviceLink: "service-details-left-sidebar"
       }
     ];
